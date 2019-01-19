@@ -1,0 +1,22 @@
+if ($passwordstrength{Users} eq 'none') {
+	$OUT .= <<EOF;
+/*
+	30strength
+*/
+	\$pwd_min_length = 7;
+EOF
+}
+elsif ($passwordstrength{Users} eq 'strong') {
+	$OUT .= <<EOF;
+/*
+	30strength
+*/
+	\$pwd_min_length = 7;
+	\$pwd_min_lower = 1;
+	\$pwd_min_upper = 1;
+	\$pwd_min_digit = 1;
+	\$pwd_min_special = 1;
+	\$pwd_complexity = 4;
+	\$use_pwnedpasswords = true;
+EOF
+}

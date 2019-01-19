@@ -1,0 +1,37 @@
+{
+use NethServer::SSSD;
+
+my $sssd = new NethServer::SSSD();
+my $baseDN = $sssd->baseDN();
+my $bindDN = $sssd->bindDN();
+    $bindDN =~ s/\\/\\\\/g;
+    my $userDN = $sssd->userDN();
+    my $groupDN = $sssd->groupDN();
+    my $bindPassword = $sssd->bindPassword();
+    my $host = $sssd->host();
+my $ldapURI = $sssd->ldapURI();
+
+my @chars = ("A".."Z", "a".."z", "0".."9");
+my $secret;
+$secret .= $chars[rand @chars] for 1..12;
+
+my $lang = ($ssp{lang} || 'en');
+my $email = ($ssp{'UseEmail'} || 'false');
+
+$OUT .= <<EOF;
+<?php
+
+/*
+ 10main
+*/
+
+\$lang = "$lang";
+\$show_menu = true;
+\$use_questions = false;
+\$use_sms = false;
+\$pwd_show_policy = "always";
+\$pwd_show_policy_pos = "above";
+\$keyphrase = "$secret";
+\$use_tokens = $email;
+
+EOF

@@ -1,0 +1,35 @@
+if ($sssd{Provider} eq 'ldap') {
+	my $libuserpass = `cat /var/lib/nethserver/secrets/libuser | tr -d '\n'`;
+	$OUT .= <<EOF;
+/*
+	40provider
+*/
+	\$ldap_binddn = "cn=libuser,dc=directory,dc=nh";
+	\$ldap_bindpw = "$libuserpass";
+	\$ldap_base = "dc=directory,dc=nh";
+	\$ldap_filter = "(&(objectClass=person)(uid={login})(!(uid=admin)))";
+	\$who_change_password = "user";
+	\$mail_attribute = "mail";
+EOF
+}
+elsif ($sssd{Provider} eq 'ad') {
+	my $ssppass = `cat /var/lib/nethserver/secrets/ssp | tr -d '\n'`;
+	$OUT .= <<EOF;
+/*
+	40provider
+*/
+	\$ad_mode = true;
+	\$ldap_starttls = false;
+	\$ldap_url = "$ldapURI";
+	\$ldap_binddn = "ssp\@$sssd{Realm}";
+	\$ldap_bindpw = "$ssppass";
+	\$ldap_base = "$baseDN";
+	\$ldap_login_attribute = "sAMAccountName";
+	\$ldap_fullname_attribute = "cn";
+	\$ldap_filter = "(&(objectClass=user)(sAMAccountName={login})(!(userAccountControl:1.2.840.113556.1.4.803:=2)))";
+	\$who_change_password = "user";
+	\$mail_attribute = "userPrincipalName";
+EOF
+}
+
+}

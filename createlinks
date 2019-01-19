@@ -1,0 +1,20 @@
+#!/usr/bin/perl -w
+
+use esmith::Build::CreateLinks qw(:all);
+
+# actions to do
+
+event_templates('nethserver-self-service-password-update', qw(
+		/etc/httpd/conf.d/default-virtualhost.inc
+		/etc/httpd/conf.d/self-service-password.conf
+		/usr/share/self-service-password/conf/config.inc.local.php
+));
+
+event_actions('nethserver-self-service-password-update', qw(
+		initialize-default-databases 00
+		runlevel-adjust 10'
+));
+		
+event_services('nethserver-self-service-password-update', qw(
+               httpd restart
+));

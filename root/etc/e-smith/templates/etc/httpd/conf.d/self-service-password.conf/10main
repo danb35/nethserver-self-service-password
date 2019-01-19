@@ -1,0 +1,50 @@
+{
+my $status = $ssp{UseVhost} || 'disabled';
+my $vhost = $ssp{VHostName} || 'ssp.'.$DomainName;
+$OUT .= "\n";
+
+if ( $status eq 'enabled' ) {
+$OUT .= <<EOF
+<VirtualHost *:80>
+	DocumentRoot "/usr/share/self-service-password"
+	ServerName $vhost
+	RewriteEngine on
+	RewriteRule ^/\\.well-known/ - [L]
+	RewriteRule (.*) https://$vhost\$1 [R,L]
+	Alias "/.well-known/acme-challenge/" "/var/www/html/.well-known/acme-challenge/"
+	<Directory "/var/www/html/.well-known/acme-challenge/">
+		Require all granted
+		Options -Indexes -FollowSymLinks
+		AllowOverride None
+	</Directory>
+</VirtualHost>
+
+<VirtualHost *:443>
+	ServerName $vhost
+	DocumentRoot /usr/share/self-service-password
+	DirectoryIndex index.php
+	AddDefaultCharset UTF-8
+	SSLEngine on
+
+	<FilesMatch \\.php\$>
+    	SetHandler "proxy:fcgi://127.0.0.1:9001"
+	</FilesMatch>
+	
+	<Directory /usr/share/self-service-password>
+    	AllowOverride None
+        Require all granted
+    </Directory>
+
+    <Directory /usr/share/self-service-password/scripts>
+    	AllowOverride None
+                Require all denied
+    </Directory>
+
+    LogLevel warn
+    ErrorLog /var/log/httpd/ssp_error_log
+    CustomLog /var/log/httpd/ssp_access_log combined
+</VirtualHost>
+EOF
+}
+
+}

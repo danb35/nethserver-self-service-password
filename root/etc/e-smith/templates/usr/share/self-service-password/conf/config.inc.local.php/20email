@@ -1,0 +1,22 @@
+if ( $email eq 'true') {
+	$OUT .= <<EOF;
+/*
+	20email
+*/
+
+	\$mail_address_use_ldap = true;
+	\$mail_attribute = "mail";
+	\$crypt_tokens = true;
+	\$token_lifetime = "900";
+	\$mail_sendmailpath = '/usr/sbin/sendmail';
+	\$mail_protocol = 'sendmail';
+	\$mail_smtp_debug = 0;
+	\$mail_debug_format = 'html';
+	\$mail_contenttype = 'text/plain';
+	\$mail_wordwrap = 0;
+	\$mail_charset = 'utf-8';
+	\$mail_priority = 3;
+	\$mail_newline = PHP_EOL;
+	\$notify_on_change = true;
+EOF
+}
