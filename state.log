@@ -1,0 +1,132 @@
+2019-01-19 16:52:11,906 - Mock Version: 1.4.13
+2019-01-19 16:52:12,063 - Start: yum install
+2019-01-19 16:54:47,657 - Finish: yum install
+2019-01-19 16:54:48,667 - Start: creating root cache
+2019-01-19 16:54:56,452 - Finish: creating root cache
+2019-01-19 16:54:56,457 - Finish: chroot init
+2019-01-19 16:54:56,690 - Start: buildsrpm
+2019-01-19 16:54:56,741 - Start: rpmbuild -bs
+2019-01-19 16:54:57,102 - Finish: rpmbuild -bs
+2019-01-19 16:54:57,106 - Finish: buildsrpm
+2019-01-19 16:54:57,108 - Start: clean chroot
+2019-01-19 16:55:03,667 - Finish: clean chroot
+2019-01-19 16:55:03,669 - Finish: run
+2019-01-19 16:55:08,086 - Mock Version: 1.4.13
+2019-01-19 16:55:11,508 - Start: yum update
+2019-01-19 16:55:14,314 - Finish: yum update
+2019-01-19 16:55:14,336 - Finish: chroot init
+2019-01-19 16:55:14,341 - Start: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 16:55:14,344 - Start: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 16:55:40,372 - Finish: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 16:55:40,372 - Start: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 16:55:40,374 - Start: Outputting list of installed packages
+2019-01-19 16:55:40,617 - Finish: Outputting list of installed packages
+2019-01-19 16:55:41,138 - Finish: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 16:55:41,142 - Finish: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 16:55:41,143 - Start: clean chroot
+2019-01-19 16:55:47,222 - Finish: clean chroot
+2019-01-19 16:55:47,223 - Finish: run
+2019-01-19 17:26:01,013 - Mock Version: 1.4.13
+2019-01-19 17:26:02,066 - Start: yum update
+2019-01-19 17:26:05,985 - Finish: yum update
+2019-01-19 17:26:06,005 - Finish: chroot init
+2019-01-19 17:26:06,014 - Start: buildsrpm
+2019-01-19 17:26:06,063 - Start: rpmbuild -bs
+2019-01-19 17:26:06,320 - Finish: rpmbuild -bs
+2019-01-19 17:26:06,324 - Finish: buildsrpm
+2019-01-19 17:26:06,325 - Start: clean chroot
+2019-01-19 17:26:12,664 - Finish: clean chroot
+2019-01-19 17:26:12,665 - Finish: run
+2019-01-19 17:26:18,848 - Mock Version: 1.4.13
+2019-01-19 17:26:21,088 - Start: yum update
+2019-01-19 17:26:23,166 - Finish: yum update
+2019-01-19 17:26:23,189 - Finish: chroot init
+2019-01-19 17:26:23,193 - Start: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:26:23,196 - Start: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:26:29,903 - Finish: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:26:29,903 - Start: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:26:29,905 - Start: Outputting list of installed packages
+2019-01-19 17:26:30,144 - Finish: Outputting list of installed packages
+2019-01-19 17:26:30,639 - Finish: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:26:30,643 - Finish: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:26:30,644 - Start: clean chroot
+2019-01-19 17:26:36,855 - Finish: clean chroot
+2019-01-19 17:26:36,856 - Finish: run
+2019-01-19 17:30:15,376 - Mock Version: 1.4.13
+2019-01-19 17:30:16,406 - Start: yum update
+2019-01-19 17:30:19,961 - Finish: yum update
+2019-01-19 17:30:19,983 - Finish: chroot init
+2019-01-19 17:30:19,993 - Start: buildsrpm
+2019-01-19 17:30:20,045 - Start: rpmbuild -bs
+2019-01-19 17:30:20,300 - Finish: rpmbuild -bs
+2019-01-19 17:30:20,305 - Finish: buildsrpm
+2019-01-19 17:30:20,306 - Start: clean chroot
+2019-01-19 17:30:26,399 - Finish: clean chroot
+2019-01-19 17:30:26,401 - Finish: run
+2019-01-19 17:30:30,439 - Mock Version: 1.4.13
+2019-01-19 17:30:31,487 - Start: yum update
+2019-01-19 17:30:34,075 - Finish: yum update
+2019-01-19 17:30:34,097 - Finish: chroot init
+2019-01-19 17:30:34,102 - Start: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:30:34,105 - Start: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:30:41,765 - Finish: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:30:41,765 - Start: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:30:41,768 - Start: Outputting list of installed packages
+2019-01-19 17:30:42,005 - Finish: Outputting list of installed packages
+2019-01-19 17:30:42,499 - Finish: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:30:42,502 - Finish: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:30:42,504 - Start: clean chroot
+2019-01-19 17:30:48,631 - Finish: clean chroot
+2019-01-19 17:30:48,633 - Finish: run
+2019-01-19 17:39:30,753 - Mock Version: 1.4.13
+2019-01-19 17:39:32,013 - Start: yum update
+2019-01-19 17:39:34,675 - Finish: yum update
+2019-01-19 17:39:34,698 - Finish: chroot init
+2019-01-19 17:39:34,708 - Start: buildsrpm
+2019-01-19 17:39:34,762 - Start: rpmbuild -bs
+2019-01-19 17:39:35,019 - Finish: rpmbuild -bs
+2019-01-19 17:39:35,024 - Finish: buildsrpm
+2019-01-19 17:39:35,025 - Start: clean chroot
+2019-01-19 17:39:41,266 - Finish: clean chroot
+2019-01-19 17:39:41,268 - Finish: run
+2019-01-19 17:39:45,747 - Mock Version: 1.4.13
+2019-01-19 17:39:46,765 - Start: yum update
+2019-01-19 17:39:48,882 - Finish: yum update
+2019-01-19 17:39:48,905 - Finish: chroot init
+2019-01-19 17:39:48,909 - Start: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:39:48,912 - Start: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:40:13,360 - Finish: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:40:13,360 - Start: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:40:13,363 - Start: Outputting list of installed packages
+2019-01-19 17:40:13,585 - Finish: Outputting list of installed packages
+2019-01-19 17:40:14,010 - Finish: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:40:14,014 - Finish: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:40:14,015 - Start: clean chroot
+2019-01-19 17:40:20,433 - Finish: clean chroot
+2019-01-19 17:40:20,435 - Finish: run
+2019-01-19 17:44:34,146 - Mock Version: 1.4.13
+2019-01-19 17:44:35,204 - Start: yum update
+2019-01-19 17:44:38,503 - Finish: yum update
+2019-01-19 17:44:38,528 - Finish: chroot init
+2019-01-19 17:44:38,537 - Start: buildsrpm
+2019-01-19 17:44:38,593 - Start: rpmbuild -bs
+2019-01-19 17:44:38,853 - Finish: rpmbuild -bs
+2019-01-19 17:44:38,858 - Finish: buildsrpm
+2019-01-19 17:44:38,859 - Start: clean chroot
+2019-01-19 17:44:44,969 - Finish: clean chroot
+2019-01-19 17:44:44,971 - Finish: run
+2019-01-19 17:44:49,352 - Mock Version: 1.4.13
+2019-01-19 17:44:50,355 - Start: yum update
+2019-01-19 17:44:52,612 - Finish: yum update
+2019-01-19 17:44:52,635 - Finish: chroot init
+2019-01-19 17:44:52,639 - Start: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:44:52,642 - Start: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:44:59,717 - Finish: build setup for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:44:59,717 - Start: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:44:59,720 - Start: Outputting list of installed packages
+2019-01-19 17:44:59,955 - Finish: Outputting list of installed packages
+2019-01-19 17:45:00,421 - Finish: rpmbuild nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:45:00,425 - Finish: build phase for nethserver-self-service-password-0.1-1.ns7.src.rpm
+2019-01-19 17:45:00,426 - Start: clean chroot
+2019-01-19 17:45:06,605 - Finish: clean chroot
+2019-01-19 17:45:06,607 - Finish: run

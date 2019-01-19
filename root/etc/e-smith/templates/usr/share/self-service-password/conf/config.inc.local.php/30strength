@@ -1,3 +1,4 @@
+{
 if ($passwordstrength{Users} eq 'none') {
 	$OUT .= <<EOF;
 /*
@@ -19,4 +20,5 @@ elsif ($passwordstrength{Users} eq 'strong') {
 	\$pwd_complexity = 4;
 	\$use_pwnedpasswords = true;
 EOF
+}
 }

@@ -1,3 +1,4 @@
+{
 if ($sssd{Provider} eq 'ldap') {
 	my $libuserpass = `cat /var/lib/nethserver/secrets/libuser | tr -d '\n'`;
 	$OUT .= <<EOF;

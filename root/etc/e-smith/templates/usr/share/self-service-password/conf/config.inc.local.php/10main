@@ -35,3 +35,4 @@ $OUT .= <<EOF;
 \$use_tokens = $email;
 
 EOF
+}

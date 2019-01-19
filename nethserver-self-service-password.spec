@@ -13,6 +13,8 @@ BuildRequires: nethserver-devtools
 Requires: self-service-password
 Requires: nethserver-httpd-virtualhosts
 Requires: nethserver-rh-php71-php-fpm
+Requires: rh-php71-php-ldap
+Requires: rh-php71-php-mbstring
 #AutoReq: no
 
 %description
@@ -42,5 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
-* Thu Jan 19 2019 Dan Brown <dan@familybrown.org> - 0.1-1.el7
+* Sat Jan 19 2019 Dan Brown <dan@familybrown.org> - 0.1-1.el7
 - Initial release
