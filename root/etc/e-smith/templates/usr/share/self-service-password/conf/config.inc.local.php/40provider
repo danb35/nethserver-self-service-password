@@ -1,4 +1,16 @@
 {
+use NethServer::SSSD;
+
+my $sssd = new NethServer::SSSD();
+my $baseDN = $sssd->baseDN();
+my $bindDN = $sssd->bindDN();
+    $bindDN =~ s/\\/\\\\/g;
+    my $userDN = $sssd->userDN();
+    my $groupDN = $sssd->groupDN();
+    my $bindPassword = $sssd->bindPassword();
+    my $host = $sssd->host();
+my $ldapURI = $sssd->ldapURI();
+
 if ($sssd{Provider} eq 'ldap') {
 	my $libuserpass = `cat /var/lib/nethserver/secrets/libuser | tr -d '\n'`;
 	$OUT .= <<EOF;

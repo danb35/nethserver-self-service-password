@@ -1871,3 +1871,284 @@ DEBUG util.py:490:  BUILDSTDERR: ERROR: not a btrfs filesystem: /var/lib/mock
 DEBUG util.py:490:  BUILDSTDERR: ERROR: can't access '/var/lib/mock'
 DEBUG util.py:634:  Child return code was: 1
 DEBUG util.py:1396:  Please ignore the error above above about btrfs.
+INFO buildroot.py:350:  Mock Version: 1.4.13
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/pts
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/dev/pts
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/shm
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/dev/shm
+DEBUG buildroot.py:481:  kernel version == 3.10.0-957.1.3.el7.x86_64
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/etc/fstab
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/var/log/yum.log
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/var/cache/yum/
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/nethserver-7-x86_64/yum_cache/', '/var/lib/mock/nethserver-7-x86_64/root/var/cache/yum/'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG buildroot.py:143:  rootdir = /var/lib/mock/nethserver-7-x86_64/root
+DEBUG buildroot.py:144:  resultdir = .
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/etc/pki/mock
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/etc/yum/pluginconf.d
+DEBUG package_manager.py:256:  configure yum
+DEBUG package_manager.py:268:  configure yum priorities
+DEBUG package_manager.py:270:  configure yum rhnplugin
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'a074b80e32b94853a1d7c5b0a913a6c0', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '76146893b34642e28c1abd3112c0c8fc', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupdel', 'mock'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd8c575e1db9e49769f383482f4cccd77', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '521bcce3c38c4cd787c7785fe82e9fa5', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/useradd', '-o', '-m', '-u', '1001', '-g', '135', '-d', '/builddir', '-n', 'mockbuild'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/RPMS
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/RPMS
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SPECS
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SPECS
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/BUILD
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/BUILD
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/originals
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/originals
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/proc
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/nethserver-7-x86_64/root/proc'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/sys
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/nethserver-7-x86_64/root/sys'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/shm
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/nethserver-7-x86_64/root/dev/shm'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/pts
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/nethserver-7-x86_64/root/dev/pts'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG package_manager.py:118:  ['/usr/bin/yum', '--installroot', '/var/lib/mock/nethserver-7-x86_64/root/', '-y', 'update']
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/yum', '--installroot', '/var/lib/mock/nethserver-7-x86_64/root/', '-y', 'update'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C.UTF-8', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to set locale, defaulting to C
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/dev/pts'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/dev/shm'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/sys'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/proc'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/.initialized
+DEBUG util.py:653:  child environment: None
+DEBUG backend.py:414:  Copying package to result dir
+DEBUG util.py:228:  kill orphans
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/nethserver-7-x86_64/root/var/cache/yum/'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:490:  BUILDSTDERR: ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:490:  BUILDSTDERR: ERROR: can't access '/var/lib/mock'
+DEBUG util.py:634:  Child return code was: 1
+DEBUG util.py:1396:  Please ignore the error above above about btrfs.
+INFO buildroot.py:350:  Mock Version: 1.4.13
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/pts
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/dev/pts
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/shm
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/dev/shm
+DEBUG buildroot.py:481:  kernel version == 3.10.0-957.1.3.el7.x86_64
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/etc/fstab
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/var/log/yum.log
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/var/cache/yum/
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/nethserver-7-x86_64/yum_cache/', '/var/lib/mock/nethserver-7-x86_64/root/var/cache/yum/'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG buildroot.py:143:  rootdir = /var/lib/mock/nethserver-7-x86_64/root
+DEBUG buildroot.py:144:  resultdir = .
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/etc/pki/mock
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/etc/yum/pluginconf.d
+DEBUG package_manager.py:256:  configure yum
+DEBUG package_manager.py:268:  configure yum priorities
+DEBUG package_manager.py:270:  configure yum rhnplugin
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd07aaea6637a495882820e5492f88f0d', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '9a01aa9e45b04d1cbaaa5f6926a1b8b1', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupdel', 'mock'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '362dc38fa8ef4ce48193c3c3115e7cd0', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '72389efa76af41bc808d48a15c48494f', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '/usr/sbin/useradd', '-o', '-m', '-u', '1001', '-g', '135', '-d', '/builddir', '-n', 'mockbuild'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/RPMS
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/RPMS
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SPECS
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SPECS
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/BUILD
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/BUILD
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/originals
+DEBUG util.py:119:  creating dir: /var/lib/mock/nethserver-7-x86_64/root/builddir/build/originals
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/proc
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/nethserver-7-x86_64/root/proc'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/sys
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/nethserver-7-x86_64/root/sys'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/shm
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/nethserver-7-x86_64/root/dev/shm'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/pts
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/nethserver-7-x86_64/root/dev/pts'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG package_manager.py:118:  ['/usr/bin/yum', '--installroot', '/var/lib/mock/nethserver-7-x86_64/root/', '-y', 'update']
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/yum', '--installroot', '/var/lib/mock/nethserver-7-x86_64/root/', '-y', 'update'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C.UTF-8', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to set locale, defaulting to C
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/dev/pts'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/dev/shm'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/sys'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/proc'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:129:  touching file: /var/lib/mock/nethserver-7-x86_64/root/.initialized
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '388b1d96abc242009f921aa87bad5b34', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.mAAxT0:/etc/resolv.conf', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/nethserver-self-service-password-0.1-1.ns7.src.rpm'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:492:  Updating / installing...
+DEBUG util.py:492:  nethserver-self-service-password-0.1-1########################################
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'c98c44f89ba947c2b683b9274a2f0773', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.mAAxT0:/etc/resolv.conf', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', '/bin/rpm', '-qpl', '/builddir/build/originals/nethserver-self-service-password-0.1-1.ns7.src.rpm'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:490:  BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+DEBUG util.py:492:  nethserver-self-service-password-0.1.tar.gz
+DEBUG util.py:492:  nethserver-self-service-password.spec
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/proc
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/nethserver-7-x86_64/root/proc'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/sys
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/nethserver-7-x86_64/root/sys'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/shm
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/nethserver-7-x86_64/root/dev/shm'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/nethserver-7-x86_64/root/dev/pts
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/nethserver-7-x86_64/root/dev/pts'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG package_manager.py:118:  ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/nethserver-7-x86_64/root/', '/var/lib/mock/nethserver-7-x86_64/root//builddir/build/SRPMS/nethserver-self-service-password-0.1-1.ns7.src.rpm']
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/nethserver-7-x86_64/root/', '/var/lib/mock/nethserver-7-x86_64/root//builddir/build/SRPMS/nethserver-self-service-password-0.1-1.ns7.src.rpm'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C.UTF-8', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to set locale, defaulting to C
+DEBUG util.py:492:  Getting requirements for nethserver-self-service-password-0.1-1.ns7.src
+DEBUG util.py:492:   --> nethserver-devtools-1.2.1-1.ns7.noarch
+DEBUG util.py:492:  ====================================================================================================================================
+DEBUG util.py:492:   Package                          Arch                Version                                    Repository                    Size
+DEBUG util.py:492:  ====================================================================================================================================
+DEBUG util.py:492:  Installing:
+DEBUG util.py:492:   nethserver-devtools              noarch              1.2.1-1.ns7                                nethserver-base               21 k
+DEBUG util.py:492:  Installing for dependencies:
+DEBUG util.py:492:   freetype                         x86_64              2.8-12.el7                                 base                         380 k
+DEBUG util.py:492:   jbigkit-libs                     x86_64              2.0-11.el7                                 base                          46 k
+DEBUG util.py:492:   libjpeg-turbo                    x86_64              1.2.90-6.el7                               base                         134 k
+DEBUG util.py:492:   libpng                           x86_64              2:1.5.13-7.el7_2                           base                         213 k
+DEBUG util.py:492:   libtiff                          x86_64              4.0.3-27.el7_3                             base                         170 k
+DEBUG util.py:492:   libwebp                          x86_64              0.3.0-7.el7                                base                         170 k
+DEBUG util.py:492:   python-docutils                  noarch              0.11-0.3.20130715svn7687.el7               base                         1.5 M
+DEBUG util.py:492:   python-pillow                    x86_64              2.0.0-19.gitd1c6db8.el7                    base                         438 k
+DEBUG util.py:492:  Transaction Summary
+DEBUG util.py:492:  ====================================================================================================================================
+DEBUG util.py:492:  Install  1 Package (+8 Dependent packages)
+DEBUG util.py:492:  Total size: 3.1 M
+DEBUG util.py:492:  Installed size: 10 M
+DEBUG util.py:492:  Installed:
+DEBUG util.py:492:    nethserver-devtools.noarch 0:1.2.1-1.ns7                                                                                          
+DEBUG util.py:492:  Dependency Installed:
+DEBUG util.py:492:    freetype.x86_64 0:2.8-12.el7                                         jbigkit-libs.x86_64 0:2.0-11.el7                             
+DEBUG util.py:492:    libjpeg-turbo.x86_64 0:1.2.90-6.el7                                  libpng.x86_64 2:1.5.13-7.el7_2                               
+DEBUG util.py:492:    libtiff.x86_64 0:4.0.3-27.el7_3                                      libwebp.x86_64 0:0.3.0-7.el7                                 
+DEBUG util.py:492:    python-docutils.noarch 0:0.11-0.3.20130715svn7687.el7                python-pillow.x86_64 0:2.0.0-19.gitd1c6db8.el7               
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/dev/pts'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/dev/shm'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/sys'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/nethserver-7-x86_64/root/proc'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: rpm -qa --root '/var/lib/mock/nethserver-7-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > ./installed_pkgs.log with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell True
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG backend.py:530:  Copying packages to result dir
+DEBUG util.py:228:  kill orphans
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/nethserver-7-x86_64/root/var/cache/yum/'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:490:  BUILDSTDERR: ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:490:  BUILDSTDERR: ERROR: can't access '/var/lib/mock'
+DEBUG util.py:634:  Child return code was: 1
+DEBUG util.py:1396:  Please ignore the error above above about btrfs.
