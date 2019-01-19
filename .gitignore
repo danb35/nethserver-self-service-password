@@ -1,2 +1,5 @@
 ._*
 .DS_Store
+*.rpm
+*.tar.gz
+

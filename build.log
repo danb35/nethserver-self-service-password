@@ -749,3 +749,123 @@ Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.3mRFqI
 + rm -rf /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64
 + exit 0
 Child return code was: 0
+Mock Version: 1.4.13
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/nethserver-self-service-password.spec'], timeout=0nspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.Iyp5KV:/etc/resolv.conf']shell=Falseuid=1001chrootPath='/var/lib/mock/nethserver-7-x86_64/root'gid=135user='mockbuild'env={'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '}logger=<mockbuild.trace_decorator.getLog object at 0x7f8ccb5b3d10>unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'c12102aaec6c491388c98a98e6599d2d', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.Iyp5KV:/etc/resolv.conf', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/nethserver-self-service-password.spec'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/nethserver-self-service-password-0.1-1.ns7.src.rpm
+Child return code was: 0
+Mock Version: 1.4.13
+ENTER ['do'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/nethserver-self-service-password.spec'], timeout=0nspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.XK7PFG:/etc/resolv.conf']shell=Falseuid=1001chrootPath='/var/lib/mock/nethserver-7-x86_64/root'gid=135user='mockbuild'env={'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '}logger=<mockbuild.trace_decorator.getLog object at 0x7ffa19d15d10>unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '3f327a987aa14ad497a912e8cbfb9a41', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.XK7PFG:/etc/resolv.conf', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/nethserver-self-service-password.spec'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+Building target platforms: x86_64
+Building for target x86_64
+Wrote: /builddir/build/SRPMS/nethserver-self-service-password-0.1-1.ns7.src.rpm
+Child return code was: 0
+ENTER ['do'](['bash', '--login', '-c', u'/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/nethserver-self-service-password.spec'], timeout=0nspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.XK7PFG:/etc/resolv.conf']shell=Falseuid=1001chrootPath='/var/lib/mock/nethserver-7-x86_64/root'gid=135user='mockbuild'env={'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '}logger=<mockbuild.trace_decorator.getLog object at 0x7ffa19d15d10>unshare_net=TrueprintOutput=True)
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'afb2c418a94d4136a05264452810780d', '-D', '/var/lib/mock/nethserver-7-x86_64/root', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.XK7PFG:/etc/resolv.conf', '--setenv=LANG=C', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOSTNAME=mock', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=HOME=/builddir', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '-u', 'mockbuild', 'bash', '--login', '-c', u'/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/nethserver-self-service-password.spec'] with env {'LANG': 'C', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+BUILDSTDERR: Failed to create directory /var/lib/mock/nethserver-7-x86_64/root//sys/fs/selinux: Read-only file system
+Building target platforms: x86_64
+Building for target x86_64
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.hAk2vL
++ umask 022
++ cd /builddir/build/BUILD
++ cd /builddir/build/BUILD
++ rm -rf nethserver-self-service-password-0.1
++ /usr/bin/gzip -dc /builddir/build/SOURCES/nethserver-self-service-password-0.1.tar.gz
++ /usr/bin/tar -xvvf -
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org 0 2019-01-19 17:49 nethserver-self-service-password-0.1/
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org 94061 2019-01-19 17:49 nethserver-self-service-password-0.1/build.log
+-rwxr-xr-x dan@familybrown.org/locals@familybrown.org   518 2019-01-19 17:49 nethserver-self-service-password-0.1/createlinks
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org  1233 2019-01-19 17:49 nethserver-self-service-password-0.1/hw_info.log
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org 17061 2019-01-19 17:49 nethserver-self-service-password-0.1/installed_pkgs.log
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org  8252 2019-01-19 17:49 nethserver-self-service-password-0.1/nethserver-self-service-password-0.1-1.ns7.noarch.rpm
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org 49774 2019-01-19 17:49 nethserver-self-service-password-0.1/nethserver-self-service-password-0.1-1.ns7.src.rpm
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org 46321 2019-01-19 17:49 nethserver-self-service-password-0.1/nethserver-self-service-password-0.1.tar.gz
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org  1020 2019-01-19 17:49 nethserver-self-service-password-0.1/nethserver-self-service-password.spec
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org  1466 2019-01-19 17:49 nethserver-self-service-password-0.1/nethserver-self-service-password.spec.save
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org 271685 2019-01-19 17:49 nethserver-self-service-password-0.1/root.log
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/db/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/db/configuration/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/db/configuration/defaults/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/db/configuration/defaults/ssp/
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org     14 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/db/configuration/defaults/ssp/type
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/etc/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/etc/httpd/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/etc/httpd/conf.d/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/etc/httpd/conf.d/default-virtualhost.inc/
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org    581 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/etc/httpd/conf.d/default-virtualhost.inc/50selfservicepassword
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/etc/httpd/conf.d/self-service-password.conf/
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org   1209 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/etc/httpd/conf.d/self-service-password.conf/10main
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/share/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/share/self-service-password/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/share/self-service-password/conf/
+drwxr-xr-x dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/share/self-service-password/conf/config.inc.local.php/
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org    414 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/share/self-service-password/conf/config.inc.local.php/10main
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org    471 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/share/self-service-password/conf/config.inc.local.php/20email
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org    361 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/share/self-service-password/conf/config.inc.local.php/30strength
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org   1303 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/share/self-service-password/conf/config.inc.local.php/40provider
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org      0 2019-01-19 17:49 nethserver-self-service-password-0.1/root/etc/e-smith/templates/usr/share/self-service-password/conf/config.inc.local.php/template-begin
+-rw-r--r-- dan@familybrown.org/locals@familybrown.org   9337 2019-01-19 17:49 nethserver-self-service-password-0.1/state.log
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd nethserver-self-service-password-0.1
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.wnTGmC
++ umask 022
++ cd /builddir/build/BUILD
++ cd nethserver-self-service-password-0.1
++ /usr/bin/make -f /usr/share/nethserver-devtools/docs.mk
+make: Nothing to be done for `all'.
++ perl createlinks
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.VTVwit
++ umask 022
++ cd /builddir/build/BUILD
++ '[' /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64 '!=' / ']'
++ rm -rf /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64
+BUILDSTDERR: ++ dirname /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64
++ mkdir -p /builddir/build/BUILDROOT
++ mkdir /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64
++ cd nethserver-self-service-password-0.1
++ rm -rf /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64
++ cd root
++ find . -depth -print
++ cpio -dump /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64
+BUILDSTDERR: 9 blocks
++ /usr/bin/genfilelist /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64 /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64
++ /usr/lib/rpm/find-debuginfo.sh --strict-build-id -m --run-dwz --dwz-low-mem-die-limit 10000000 --dwz-max-die-limit 110000000 /builddir/build/BUILD/nethserver-self-service-password-0.1
+/usr/lib/rpm/sepdebugcrcfix: Updated 0 CRC32s, 0 CRC32s did match.
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/redhat/brp-compress
++ /usr/lib/rpm/redhat/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/redhat/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: nethserver-self-service-password-0.1-1.ns7.noarch
+Provides: nethserver-self-service-password = 0.1-1.ns7
+Requires(interp): /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64
+Wrote: /builddir/build/RPMS/nethserver-self-service-password-0.1-1.ns7.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.nnAW5b
++ umask 022
++ cd /builddir/build/BUILD
++ cd nethserver-self-service-password-0.1
++ rm -rf /builddir/build/BUILDROOT/nethserver-self-service-password-0.1-1.ns7.x86_64
++ exit 0
+Child return code was: 0
