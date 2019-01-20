@@ -1,7 +1,7 @@
 Summary: NethServer configuration for self-service-password
 %define name nethserver-self-service-password
 %define version 0.1
-%define release 3
+%define release 4
 Name: %{name}
 Version: %{version}
 Release: %{release}%{?dist}
@@ -44,6 +44,9 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Sat Jan 19 2019 Dan Brown <dan@familybrown.org> - 0.1-4.el7
+- Set ownership/permissions for ssp local config
+
 * Sat Jan 19 2019 Dan Brown <dan@familybrown.org> - 0.1-3.el7
 - Update license
 - Remove logo from page
