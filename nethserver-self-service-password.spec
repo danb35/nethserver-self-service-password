@@ -1,7 +1,7 @@
 Summary: NethServer configuration for self-service-password
 %define name nethserver-self-service-password
 %define version 0.1
-%define release 1
+%define release 2
 Name: %{name}
 Version: %{version}
 Release: %{release}%{?dist}
@@ -44,5 +44,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Sat Jan 19 2019 Dan Brown <dan@familybrown.org> - 0.1-2.el7
+- Fix email configuration
+
 * Sat Jan 19 2019 Dan Brown <dan@familybrown.org> - 0.1-1.el7
 - Initial release
