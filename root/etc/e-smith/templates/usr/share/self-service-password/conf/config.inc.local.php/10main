@@ -3,6 +3,7 @@ my @chars = ("A".."Z", "a".."z", "0".."9");
 my $secret;
 $secret .= $chars[rand @chars] for 1..12;
 
+my $email = ($ssp{'UseEmail'} || 'false');
 my $lang = ($ssp{lang} || 'en');
 
 $OUT .= <<EOF;
@@ -20,6 +21,7 @@ $OUT .= <<EOF;
 \$pwd_show_policy_pos = "above";
 \$keyphrase = "$secret";
 \$use_tokens = $email;
+\$logo = "";
 
 EOF
 }

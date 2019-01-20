@@ -1,11 +1,11 @@
 Summary: NethServer configuration for self-service-password
 %define name nethserver-self-service-password
 %define version 0.1
-%define release 2
+%define release 3
 Name: %{name}
 Version: %{version}
 Release: %{release}%{?dist}
-License: GPL
+License: GPL 3.0
 Source: %{name}-%{version}.tar.gz
 BuildArch: noarch
 
@@ -44,6 +44,11 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Sat Jan 19 2019 Dan Brown <dan@familybrown.org> - 0.1-3.el7
+- Update license
+- Remove logo from page
+- Re-fix email configuration
+
 * Sat Jan 19 2019 Dan Brown <dan@familybrown.org> - 0.1-2.el7
 - Fix email configuration
 
