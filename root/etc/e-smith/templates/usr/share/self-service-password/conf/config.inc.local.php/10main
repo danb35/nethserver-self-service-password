@@ -4,7 +4,6 @@ my $secret;
 $secret .= $chars[rand @chars] for 1..12;
 
 my $lang = ($ssp{lang} || 'en');
-my $email = ($ssp{'UseEmail'} || 'false');
 
 $OUT .= <<EOF;
 <?php

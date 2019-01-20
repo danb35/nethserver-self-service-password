@@ -1,4 +1,6 @@
 {
+my $email = ($ssp{'UseEmail'} || 'false');
+
 if ( $email eq 'true') {
 	$OUT .= <<EOF;
 /*
