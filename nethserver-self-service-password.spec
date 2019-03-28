@@ -8,6 +8,7 @@ Release: %{release}%{?dist}
 License: GPL 3.0
 Source: %{name}-%{version}.tar.gz
 BuildArch: noarch
+URL: https://github.com/danb35/nethserver-self-service-password
 
 BuildRequires: nethserver-devtools
 Requires: self-service-password
