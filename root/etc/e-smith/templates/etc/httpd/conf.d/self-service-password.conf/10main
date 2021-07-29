@@ -1,6 +1,8 @@
 {
 my $status = $ssp{UseVhost} || 'disabled';
 my $vhost = $ssp{VHostName} || 'ssp.'.$DomainName;
+my $port = ${'rh-php73-php-fpm'}{TCPPorts} || 9003;
+
 $OUT .= "\n";
 
 if ( $status eq 'enabled' ) {
@@ -21,16 +23,16 @@ $OUT .= <<EOF
 
 <VirtualHost *:443>
 	ServerName $vhost
-	DocumentRoot /usr/share/self-service-password
+	DocumentRoot /usr/share/self-service-password/htdocs
 	DirectoryIndex index.php
 	AddDefaultCharset UTF-8
 	SSLEngine on
 
 	<FilesMatch \\.php\$>
-    	SetHandler "proxy:fcgi://127.0.0.1:9000"
+    	SetHandler "proxy:fcgi://127.0.0.1:$port"
 	</FilesMatch>
 	
-	<Directory /usr/share/self-service-password>
+	<Directory /usr/share/self-service-password/htdocs>
     	AllowOverride None
         Require all granted
     </Directory>
