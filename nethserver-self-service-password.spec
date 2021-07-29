@@ -1,7 +1,7 @@
 Summary: NethServer configuration for self-service-password
 %define name nethserver-self-service-password
-%define version 0.1
-%define release 4
+%define version 0.2
+%define release 1
 Name: %{name}
 Version: %{version}
 Release: %{release}%{?dist}
@@ -13,9 +13,10 @@ URL: https://github.com/danb35/nethserver-self-service-password
 BuildRequires: nethserver-devtools
 Requires: self-service-password
 Requires: nethserver-httpd-virtualhosts
-Requires: nethserver-rh-php71-php-fpm
-Requires: rh-php71-php-ldap
-Requires: rh-php71-php-mbstring
+Requires: nethserver-rh-php73-php-fpm
+Requires: rh-php73-php-ldap
+Requires: rh-php73-php-mbstring
+Requires: nethserver-release = 7
 #AutoReq: no
 
 %description
@@ -45,6 +46,9 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_nseventsdir}/%{name}-update
 
 %changelog
+* Thu Jul 29 2021 Dan Brown <dan@familybrown.org> - 0.3-1.el7
+- Update to require PHP 7.3
+
 * Sat Jan 19 2019 Dan Brown <dan@familybrown.org> - 0.1-4.el7
 - Set ownership/permissions for ssp local config
 
