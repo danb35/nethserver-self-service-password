@@ -19,7 +19,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-LTB-project
 
 Next, import the signing GPG key using `rpm --import https://ltb-project.org/wiki/lib/RPM-GPG-KEY-LTB-project`.
 
-Finally, install the packages using `yum --enablerepo=danb35 install nethserver-self-service-password`.
+Finally, install the packages using `yum --enablerepo=danb35,ltb-project-noarch install nethserver-self-service-password`.
 
 ## Configuration Variables
 
